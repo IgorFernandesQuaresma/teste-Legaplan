@@ -2,6 +2,8 @@ import Image from 'next/image';
 import React from 'react';
 import styles from '../../styles/listaTarefas/listaTarefas.module.scss';
 import trash from '../../../public/assets/trash.png'
+import Modal from '../modals/novaTarefa';
+import ExcluirModal from '../modals/excluirTarefa';
 
 
 
@@ -26,7 +28,7 @@ export default function ListaTarefas() {
                         <input type="checkbox" id="tarefa1" className={styles.checkbox} />
                         <p className={styles.tarefaDescricao}>Lavar as mãos</p>
                         </div>
-                        <Image src={trash} alt="Logo" className={styles.icone}  />
+                        <ExcluirModal/>
                     </li>
 
                     <li className={styles.tarefaItem}>
@@ -34,7 +36,7 @@ export default function ListaTarefas() {
                         <input type="checkbox" id="tarefa1" className={styles.checkbox} />
                         <p className={styles.tarefaDescricao}>Fazer um bolo</p>
                         </div>
-                        <Image src={trash} alt="Logo" className={styles.icone}  />
+                        <ExcluirModal/>
                     </li>
 
                     <li className={styles.tarefaItem}>
@@ -42,7 +44,7 @@ export default function ListaTarefas() {
                         <input type="checkbox" id="tarefa1" className={styles.checkbox} />
                         <p className={styles.tarefaDescricao}>Lavar a louça</p>
                         </div>
-                        <Image src={trash} alt="Logo" className={styles.icone}  />
+                        <ExcluirModal/>
                     </li>
 
 
@@ -55,11 +57,11 @@ export default function ListaTarefas() {
                         <input type="checkbox" id="tarefa3" className={styles.checkbox} checked />
                         <p className={styles.tarefaDescricao_realizada}>Levar o lixo para fora</p>
                     </div>
-                        <Image src={trash} alt="Logo" className={styles.icone}  />
+                        <ExcluirModal/>
                     </li>
                 </ul>
     </div>
-                <button className={styles.btn}>Adicionar Tarefa</button>   
+                <Modal/>
     </section>
     );
 }

@@ -1,0 +1,24 @@
+@import '../variaveis.scss';
+
+
+
+.btn {
+    width: 450px;
+    height: 50px;
+    color: $color-white;
+    border: none;
+    border-radius: 8px;
+    background: $gradient-default;
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) { 
+
+    .btn {
+        width: 272px;
+        height: 51px;
+    }
+}
