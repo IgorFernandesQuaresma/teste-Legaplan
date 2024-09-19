@@ -1,0 +1,147 @@
+@import '../variaveis.scss';
+
+
+.listaTarefas_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.listaTarefas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    min-height: 446px;
+    border: 1px solid $color-gray-bordas;
+    border-radius: 16px;
+    padding: 32px;
+    margin: 40px auto 0;
+    height: auto; 
+    box-sizing: border-box;
+}
+
+.tarefaItem {
+    width: 386px;
+    height: 56px;
+    border: 1px dashed $color-gray-bordas;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    padding: 16px; 
+    box-sizing: border-box; 
+    margin-bottom: 24px;
+}
+
+.tarefaItem:hover {
+    background-color: $color-hover;
+    cursor: pointer;
+}
+
+.tarefaItem_bloco {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+    appearance: none; 
+    border: 1px solid $color-gray-bordas; 
+    border-radius: 4px; 
+    background-color: $color-white; /* Cor de fundo quando não marcado */
+    position: relative;
+    cursor: pointer;
+    
+    
+}
+
+.checkbox:checked {
+    background-color: $color-light-blue; 
+    border: 1px solid $color-blue-start;
+
+}
+
+.checkbox:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 6px; 
+    height: 13px; 
+    border: solid $color-blue-start; 
+    border-width: 0 2px 2px 0; 
+    box-sizing: border-box;
+  }
+
+  .tarefaDescricao_realizada {
+    color: $color-gray;
+    text-decoration: line-through; 
+    text-decoration-color: $color-gray;
+    text-decoration-style: solid; 
+  }
+
+.icone {
+    width: 24px;
+    height: 24px;
+}
+
+.btn {
+    width: 450px;
+    height: 50px;
+    color: $color-white;
+    border: none;
+    border-radius: 8px;
+    background: $gradient-default;
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.listaTarefas_titulo {
+    margin-bottom: 24px;
+}
+
+
+@media (max-width: 768px) { 
+
+    .listaTarefas_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 100%;
+    }
+
+    .listaTarefas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 272px;
+        min-height: 428px;
+        margin: 24px 0 auto; 
+    }
+
+    .tarefaItem {
+        width: 208px;
+        height: 56px;
+        
+    }
+
+    .btn {
+        width: 272px;
+        height: 51px;
+    }
+    
+  
+  
+}

@@ -1,0 +1,64 @@
+@import '../variaveis.scss';
+
+    .navBar {
+        width: 1320px;      
+        height: 84px;      
+        display: flex; 
+        flex-direction: row;      
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $color-gray-bordas;
+    }
+
+    .navBar_logos {
+        width: 150px;
+        height: 36px;
+        display: flex; 
+        flex-direction: row;      
+        justify-content: center; 
+        align-items: center;
+        gap: 8px;
+        
+        
+    }
+
+    .navBar_logo1 {
+        width: 33px;
+        height: 33px;
+    }
+
+    .navBar_logo2 {
+        width: 106px;
+        height: 15px;
+    }
+
+
+    @media (max-width: 768px) {
+        .navBar {
+            width: 272px; 
+            max-width: 272px; 
+            height: 138px;      
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;     
+            align-items: start; 
+            border-bottom: 1px solid $color-gray-bordas;
+            gap: 4px;
+            margin: 0 auto; 
+        }
+    
+
+        .navBar_welcome {
+            font-size: 16px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .navBar_data {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+
+    }
