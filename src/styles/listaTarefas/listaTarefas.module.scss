@@ -127,3 +127,323 @@
     }
 
 }
+
+.btn {
+    width: 450px;
+    height: 50px;
+    color: $color-white;
+    border: none;
+    border-radius: 8px;
+    background: $gradient-default;
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) { 
+
+    .btn {
+        width: 272px;
+        height: 51px;
+    }
+}
+
+
+
+//Estilo modal de tarefas
+
+
+.addTarefa_container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $color-white;
+    width: 450px;
+    height: 286px;
+    border-radius: 16px;
+    padding: 32px;
+    gap: 32px;
+    box-shadow: 0px 24px 48px -12px ;
+    margin: 0 auto;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    margin: 0;
+}
+
+.addTarefa_title {
+    width: 386px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.addTarefa_inoutCampo {
+    width: 386px;
+    height: 78px;
+    margin: 0 auto;
+}
+
+.addTarefa_subtitulo {
+    width: 386px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.addTarefa_input{
+    width: 386px;
+    height: 50px;
+    border-radius: 16px;
+    padding: 32px;
+    box-sizing: border-box;
+    border: 1px solid $color-gray-bordas;
+}
+
+.actionButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 386px;
+}
+
+.actionButtons_cancelar {
+    width: 185px;
+    height: 51px;
+    border-radius: 8px;
+    padding: 16px, 24px, 16px, 24px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0 8px;
+    background: $color-hover;
+}
+
+.actionButtons_adicionar {
+    width: 185px;
+    height: 51px;
+    border-radius: 8px;
+    padding: 16px, 24px, 16px, 24px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0 8px;
+    background: $gradient-default;
+    color: $color-white;
+}
+
+
+
+@media (max-width: 768px) { 
+
+    .addTarefa_container {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100vw; 
+        height: 100vh; 
+        border-radius: 0; 
+        
+    }
+
+    .addTarefa_inputCampo {
+        width: 272px;
+        height: 78px;
+    }
+
+    .addTarefa_input{
+        width: 272px;
+        height: 51px;
+    
+    }
+
+    .addTarefa_subtitulo {
+        width: 272px;
+    }
+
+    .addTarefa_title {
+        width: 272px;
+    }
+
+
+    .actionButtons_container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 272px;
+    }
+
+    .actionButtons_cancelar {
+        width: 272px;
+        height: 51px;
+    
+    }
+    
+    .actionButtons_adicionar {
+        width: 272px;
+        height: 51px;
+        margin-bottom: 16px;
+
+    }
+
+    
+}
+
+
+//Estilo modal excluir
+
+.excluirTarefa_container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $color-white;
+    width: 450px;
+    height: 286px;
+    border-radius: 16px;
+    padding: 32px;
+    gap: 32px;
+    box-shadow: 0px 24px 48px -12px ;
+    margin: 0 auto;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    margin: 0;
+}
+
+.excluirTarefa_title {
+    width: 386px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.excluirTarefa_inoutCampo {
+    width: 386px;
+    height: 78px;
+    margin: 0 auto;
+}
+
+.excluirTarefa_subtitulo {
+    width: 386px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.excluirTarefa_input{
+    width: 386px;
+    height: 50px;
+    border-radius: 16px;
+    padding: 32px;
+    box-sizing: border-box;
+    border: 1px solid $color-gray-bordas;
+}
+
+.excluirActionButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 386px;
+}
+
+.excluirActionButtons_cancelar {
+    width: 185px;
+    height: 51px;
+    border-radius: 8px;
+    padding: 16px, 24px, 16px, 24px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0 8px;
+    background: $color-hover;
+}
+
+.excluirActionButtons_deletar {
+    width: 185px;
+    height: 51px;
+    border-radius: 8px;
+    padding: 16px, 24px, 16px, 24px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0 8px;
+    background: $gradient-red;
+    color: $color-white;
+}
+
+
+
+@media (max-width: 768px) { 
+
+    .excluirTarefa_container {
+        display:none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100vw; 
+        height: 100vh; 
+        border-radius: 0; 
+        
+    }
+
+    .excluirTarefa_inputCampo {
+        width: 272px;
+        height: 48px;
+    }
+
+    .excluirTarefa_input{
+        width: 272px;
+        height: 51px;
+    
+    }
+
+    .excluirTarefa_subtitulo {
+        width: 272px;
+        height: 48px;
+        margin: 0;
+        padding: 0;
+        text-align: start;
+    }
+
+    .excluirTarefa_title {
+        width: 272px;
+    }
+
+
+    .excluirActionButtons_container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 272px;
+    }
+
+    .excluirActionButtons_cancelar {
+        width: 272px;
+        height: 51px;
+    
+    }
+    
+    .excluirActionButtons_deletar {
+        width: 272px;
+        height: 51px;
+        margin-bottom: 16px;
+
+    }
+
+    
+}
