@@ -14,10 +14,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-        />
+        
       </head>
       <body>   
         {children}
