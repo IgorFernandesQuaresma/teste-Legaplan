@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../../styles/listaTarefas/listaTarefas.module.scss';
 import trash from '../../../public/assets/trash.png'
 import Tarefa from '../../models/Tarefa';
