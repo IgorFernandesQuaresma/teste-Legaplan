@@ -1,5 +1,9 @@
 @import '../variaveis.scss';
 
+.modalFechado {
+    display: none;
+}
+
 
 .listaTarefas_container {
     display: flex;
@@ -57,7 +61,7 @@
     appearance: none; 
     border: 1px solid $color-gray-bordas; 
     border-radius: 4px; 
-    background-color: $color-white; /* Cor de fundo quando não marcado */
+    background-color: $color-white; 
     position: relative;
     cursor: pointer;
     
@@ -155,7 +159,7 @@
 
 
 .addTarefa_container {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -246,7 +250,7 @@
 @media (max-width: 768px) { 
 
     .addTarefa_container {
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -302,7 +306,7 @@
 //Estilo modal excluir
 
 .excluirTarefa_container {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -392,7 +396,7 @@
 @media (max-width: 768px) { 
 
     .excluirTarefa_container {
-        display:none;
+        display:flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;

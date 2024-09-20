@@ -1,4 +1,3 @@
-import { TarefaProvider } from "../context/TarefasContext";
 import "../styles/globals.scss";
 
 
@@ -20,10 +19,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
         />
       </head>
-      <body>
-      <TarefaProvider>
+      <body>   
         {children}
-      </TarefaProvider>
         </body>
     </html>
   )
